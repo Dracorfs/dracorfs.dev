@@ -35,8 +35,15 @@ body
 
 #footer
 {
-    background: #d81414;
+    background-color: #1b2127;
     color: white;
-    text-align: center;
-    padding: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    vertical-align: middle;
+}
+.footer a{
+    color: white;
 }
