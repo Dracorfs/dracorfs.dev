@@ -1,40 +1,119 @@
-body
-{
-    background: black;
-    color: #6d1d81;
-    text-align: center;
-    font-family: Arial;
-    font-size: 16px;
+body{
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
-    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
 }
 
-#header
-{
-    background: #6c378b;
-    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+h1{
     color: white;
-    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    margin: 100px 150px 70px 30px;
     margin: 0;
-    width: 30%;
+}
+h1 strong{
+    color: #026fff;
+}
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.hero{
+    height: 300px;
+/*
+    background-image: url('../images/hero.jpg');
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+*/
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-image{
+    object-fit: cover;
+}
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+}
+.project{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-course,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+.project-description{
+    font-size: 10px;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-details{
+    width: 500px;
+}
+.project-imageContainer{
+    width: 500px;
+}
+header{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+ol, ul{
+    margin: 0;
     padding: 0;
-    text-align: center;
-    border: 1px;
-    margin: 0 auto;
+    list-style: none;
 }
-
-#post
-{
-    background: rgb(29, 29, 29);
-    padding: 1em;
-    text-align: center;
-    width: 27%;
-    border: 1px;
-    margin: 0 auto;
+figure{
+    margin: 0;
 }
-
-#footer
-{
+header a{
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    height: inherit;
+}
+.header ol{
+    display: flex;
+    height: inherit;
+}
+.header ol li{
+    height: inherit;
+}
+header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+.footer{
     background-color: #1b2127;
     color: white;
     display: flex;
@@ -46,4 +125,108 @@ body
 }
 .footer a{
     color: white;
+}
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.event-list-title{
+    margin-left: 20px;
+}
+.event{
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0; /*(Cuanto puede achicarse)*/
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+.event img{
+    width:  480px;
+    height: 200px;
+    object-fit: cover;
+}
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.event-description{
+    text-align: left;
+}
+.event-url{
+    padding: 5px 20px;
+    text-decoration: none;
+    color:#026fff;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.contact{
+    background-color: #026fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+}
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+.social-link.twitter{
+    background-image: url("https://img.icons8.com/android/48/000000/twitter.png");
+}
+.social-link.facebook{
+    background-image: url("https://img.icons8.com/android/48/000000/facebook.png");
+}
+.social-link.github{
+    background-image: url("https://img.icons8.com/android/48/000000/github.png");
+}
+.social-link.instagram{
+    background-image: url("https://img.icons8.com/android/48/000000/instagram.png");
+}
+
+.form-email input{
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px 20px 5px 25px;
+    background-image: url("https://img.icons8.com/ios-filled/50/000000/delivered-mail.png");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+}
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: ;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+}
+.container{
+    flex-wrap: wrap;
 }

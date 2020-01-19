@@ -1,29 +1,133 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dracorfs's Blog</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/stylesheets.css" />
-    </head>
-    <body>
-        <!--<div id="container">-->
-            <div id="header">
-                <h1>Francisco Santopietro</h1>
-                <h2>(Dracorfs)</h2>
-                <span id="tagline">Curriculum</span>
-            </div>
-            <div id="post">
-                <p><img src="https://i.imgur.com/PfA0M2o.gif" /></p>
-            </div>
-            <div id="footer">
-                <div>
-                    <p>Curso de desarrollo web online 2020 <img src="images/platzi.webp" width="80"  alt=""></p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dracorfs's Blog</title>
+    <link rel="icon" href="images/favicon.png">   
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheets.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <figure class="logo">
+                <img src="images/logo.png" width="200" alt="Logo de Francisco Santopietro">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#eventos">Experiencia</a class="link">
+                    </li>
+                    <li>
+                        <a class="link" href="#contacto">Trabajemos juntos</a class="link">
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Hola! Soy <strong>Francisco Santopietro</strong>  <br/> <strong>Junior Developer</strong>  con <br/> pasi&oacute;n por el aprendizaje.
+            </h1>
+            <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
+        </div>
+    </section>
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2>Portafolio (Proyectos destacados)</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi-Video</h3>
+                    <h6 class="project-date">React Native / React</h6>
+                    <p class="project-url"> <small><strong>Fecha:</strong>  14/01/2020</small> </p>
+                    <p class="project-description"> <small><strong>Puedes verlo en:</strong>  platzi.com/native</small> </p>
+                    <p>Platzi-Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native.</p>
                 </div>
-                <div>
-                    Design with &#128147 by <a href="https://github.com/Dracorfs" target="_blank">Dracorfs</a> &#128520;
+                <figure class="project-imageContainer">   
+                    <img  class="project-image" src="images/platzi-video-react-native.webp" width='500' alt="Proyecto del curso de React Native">
+                </figure>
+            </article>
+        </div>
+    </section>
+    <h2 class="event-list-title">M&aacute;s sobre mi experiencia</h2>
+    <section id="eventos" class="event-list">
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width='500'alt="" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf M&eacute;xico 2018</h3>
+                    <p class="event-description">El evento m&aacute;s grande sobre gente que quiere aprender m&aacute;s de internet.</p class="event-title">
+                    <a  class="event-url" href="https://dracorfs.github.io/platzi-video/home" target="_blank">Ver Pl&aacute;tica</a>
                 </div>
-            </div>
-        <!--</div>-->
-    </body>
-</html>
+            </article>
 
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width='500'alt="" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf M&eacute;xico 2018</h3>
+                    <p class="event-description">El evento m&aacute;s grande sobre gente que quiere aprender m&aacute;s de internet.</p class="event-title">
+                    <a  class="event-url" href="https://dracorfs.github.io/platzi-video/home" target="_blank">Ver Pl&aacute;tica</a>
+                </div>
+            </article>
+
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width='500'alt="" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf M&eacute;xico 2018</h3>
+                    <p class="event-description">El evento m&aacute;s grande sobre gente que quiere aprender m&aacute;s de internet.</p class="event-title">
+                    <a  class="event-url" href="https://dracorfs.github.io/platzi-video/home" target="_blank">Ver Pl&aacute;tica</a>
+                </div>
+            </article>
+
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width='500'alt="" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf M&eacute;xico 2018</h3>
+                    <p class="event-description">El evento m&aacute;s grande sobre gente que quiere aprender m&aacute;s de internet.</p class="event-title">
+                    <a  class="event-url" href="https://dracorfs.github.io/platzi-video/home" target="_blank">Ver Pl&aacute;tica</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <section id="contacto" class="contact">
+        <div class="container">
+            <form action="/suscripcion/" class="form-email">
+                <h3>Creamos algo juntos?</h3>
+                <input type="datetime" placeholder="D&eacute;jame tu email" id="email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/fransantopietro" class="social-link twitter"  target="_blank"></a>
+                <a href="https://www.facebook.com/francisco.santopietro" class="social-link facebook"  target="_blank"></a>
+                <a href="https://github.com/Dracorfs" class="social-link github"  target="_blank"></a>
+                <a href="https://www.instagram.com/fransantopietro/" class="social-link instagram"  target="_blank"></a>
+            </div>
+        </div>
+    </section>
+    <!--<div id="post"><p><img src="https://i.imgur.com/PfA0M2o.gif" /></p></div>-->
+    <footer class="footer">
+        <div>
+            <p>Curso de desarrollo web online 2020 <img src="images/platzi.webp" width="80"  alt=""></p>
+        </div>
+        <div>
+            Design with &#128147 by <a href="https://github.com/Dracorfs" target="_blank">Dracorfs</a> &#128520;
+        </div>
+    </footer>
+</body>
+</html>
+            
