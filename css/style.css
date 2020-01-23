@@ -222,7 +222,9 @@ header a{
     font-family: 'Source Sans Pro', sans-serif;
 }
 .container{
-    width: 1000px;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 320px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
