@@ -174,8 +174,6 @@ header a{
     align-items: center;
     justify-content: space-between;
 }
-.social{
-}
 .social-link{
     display: inline-block;
     width: 50px;
@@ -219,7 +217,6 @@ header a{
 }
 .form-email h3{
     font-family: 'Source Sans Pro', sans-serif;
-    text-transform: ;
 }
 .container{
     width: 1000px;
@@ -228,7 +225,5 @@ header a{
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
-}
-.container{
     flex-wrap: wrap;
 }
