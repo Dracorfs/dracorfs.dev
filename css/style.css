@@ -15,10 +15,10 @@ h1{
     margin: 0;
 }
 h1 strong{
-    color: #026fff;
+    color: #9409d4;
 }
 h2{
-    color: #026fff;
+    color: #9409d4;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
@@ -40,6 +40,7 @@ h2{
 }
 .hero-image{
     object-fit: cover;
+    max-width: 360px;
 }
 .portfolio{
     background: #fafafa;
@@ -165,12 +166,12 @@ header a{
 .event-url{
     padding: 5px 20px;
     text-decoration: none;
-    color:#026fff;
+    color:#9409d4;
     border: 1px solid;
     border-radius: 5px;
 }
 .contact{
-    background-color: #026fff;
+    background-color: #9409d4;
     color: white;
     height: 150px;
     display: flex;
