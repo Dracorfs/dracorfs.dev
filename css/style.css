@@ -1,6 +1,8 @@
+/*GENERAL*/
 body{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
+    background-color: #111111;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Fjalla One', sans-serif;
@@ -15,71 +17,20 @@ h1{
     margin: 0;
 }
 h1 strong{
-    color: #9409d4;
+    color: #04cde7;
 }
 h2{
-    color: #9409d4;
+    color: #04cde7;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 40px;
 }
-.hero{
-    height: 300px;
-/*
-    background-image: url('../images/hero.jpg');
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
-*/
-    background-color: #1b2127;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.hero-image{
-    object-fit: cover;
-    max-width: 360px;
-}
-.portfolio{
-    background: #fafafa;
-    padding: 20px;
-}
-.project{
-    border: 1px solid gray;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 20px;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.project-course,
-.project-date,
-.project-url{
-    margin: 10px 0;
-}
-.project-description{
-    font-size: 10px;
-}
-.project strong{
-    font-family: 'Fjalla One', sans-serif;
-}
-.project-title{
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-.project-details{
-    width: 500px;
-}
-.project-imageContainer{
-    width: 500px;
-}
+
+/*HEADER*/
 header{
-    background-color: #1b2127;
+    background-color: #111111;
     color: white;
     display: flex;
     height: 70px;
@@ -110,6 +61,7 @@ header a{
 }
 .header ol li{
     height: inherit;
+
 }
 header a{
     display: flex;
@@ -117,21 +69,57 @@ header a{
     height: inherit;
     padding: 0 10px;
 }
-.footer{
-    background-color: #1b2127;
-    color: white;
+
+/*MAIN*/
+.hero{
+    height: 300px;
+    background-color: #111111;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
 }
-.footer img{
-    vertical-align: middle;
+.hero-image{
+    object-fit: cover;
+    max-width: 360px;
 }
-.footer a{
-    color: white;
+.portfolio{
+    background: #161616;
+    padding: 20px;
 }
+.project{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-course,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+.project-description{
+    font-size: 15px;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-details{
+    width: 500px;
+}
+.project-imageContainer{
+    width: 500px;
+}
+
+
 .event-list{
     display: flex;
     flex-wrap: wrap;
@@ -171,13 +159,15 @@ header a{
     border-radius: 5px;
 }
 .contact{
-    background-color: #9409d4;
-    color: white;
-    height: 150px;
+    background-color: #383838;
+    color: black;
+    height: 125px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+/*SOCIAL LINKS*/
 .social-link{
     display: inline-block;
     width: 50px;
@@ -198,8 +188,9 @@ header a{
     background-image: url("https://img.icons8.com/android/48/000000/instagram.png");
 }
 
+/*EMAIL REQUEST*/
 .form-email input{
-    border-color: gray;
+    border-color: #9409d4;
     border-radius: 5px;
     border-style: solid;
     padding: 5px 20px 5px 25px;
@@ -208,19 +199,25 @@ header a{
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 5px;
+    background-color: rgba(4, 205, 231, 0.1);
 }
-
 .form-email button{
+    font-weight: bold;
     display: block;
     margin-top: 10px;
     background: transparent;
-    color: white;
+    color: black;
     padding: 10px 0;
     border-radius: 5px;
     width: 100px;
 }
 .form-email h3{
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
 }
 .container{
     width: 80%;
@@ -232,4 +229,21 @@ header a{
     align-items: inherit;
     height: inherit;
     flex-wrap: wrap;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: #202429;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer img{
+    vertical-align: middle;
+}
+.footer a{
+    color: white;
 }
