@@ -159,7 +159,7 @@ header a{
     border-radius: 5px;
 }
 .contact{
-    background-color: #383838;
+    background: linear-gradient(#111111,#202429);
     color: black;
     height: 125px;
     display: flex;
@@ -206,7 +206,7 @@ header a{
     display: block;
     margin-top: 10px;
     background: transparent;
-    color: black;
+    color: white;
     padding: 10px 0;
     border-radius: 5px;
     width: 100px;
@@ -218,6 +218,7 @@ header a{
     margin-top: 0;
     padding-top: 0;
     border-top: 0;
+    color: white;
 }
 .container{
     width: 80%;
@@ -236,14 +237,10 @@ header a{
     background-color: #202429;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.footer img{
-    vertical-align: middle;
+    justify-content: flex-end;
+    padding: 0 20px 10px 0;
 }
 .footer a{
     color: white;
+    text-decoration: none;
 }
