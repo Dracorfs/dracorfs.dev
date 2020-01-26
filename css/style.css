@@ -175,6 +175,12 @@ header a{
     border: 1px solid;
     border-radius: 5px;
 }
+.event-url:hover{
+    color: white;
+    border:1px solid #9409d4;
+    background-color: #9409d4;
+    transition: background-color 0.3s ease 0s;
+}
 
     /*2.4. Contacto*/
 .contact{
@@ -248,20 +254,7 @@ header a{
 .social-link.instagram{
     background-image: url("https://img.icons8.com/nolan/64/instagram-new.png");
 }
-/*
-.social-link.twitter{
-    background-image: url("https://img.icons8.com/android/48/000000/twitter.png");
-}
-.social-link.facebook{
-    background-image: url("https://img.icons8.com/android/48/000000/facebook.png");
-}
-.social-link.github{
-    background-image: url("https://img.icons8.com/android/48/000000/github.png");
-}
-.social-link.instagram{
-    background-image: url("https://img.icons8.com/android/48/000000/instagram.png");
-}
-*/
+
 
 /*3. FOOTER*/
 .footer{
