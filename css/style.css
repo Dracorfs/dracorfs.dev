@@ -235,6 +235,20 @@ header a{
     background-size: 50px 50px;
     margin: 0 10px;
 }
+
+.social-link.twitter{
+    background-image: url("https://img.icons8.com/nolan/64/twitter.png");
+}
+.social-link.facebook{
+    background-image: url("https://img.icons8.com/nolan/64/facebook.png");
+}
+.social-link.github{
+    background-image: url("https://img.icons8.com/nolan/64/github.png");
+}
+.social-link.instagram{
+    background-image: url("https://img.icons8.com/nolan/64/instagram-new.png");
+}
+/*
 .social-link.twitter{
     background-image: url("https://img.icons8.com/android/48/000000/twitter.png");
 }
@@ -247,7 +261,7 @@ header a{
 .social-link.instagram{
     background-image: url("https://img.icons8.com/android/48/000000/instagram.png");
 }
-
+*/
 
 /*3. FOOTER*/
 .footer{
