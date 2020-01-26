@@ -1,4 +1,4 @@
-/*GENERAL*/
+/*0. GENERAL*/
 body{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -28,7 +28,7 @@ h2{
     margin-bottom: 40px;
 }
 
-/*HEADER*/
+/*1. HEADER*/
 header{
     background-color: #111111;
     color: white;
@@ -45,15 +45,15 @@ ol, ul{
 figure{
     margin: 0;
 }
-header a{
-    color: white;
-    text-decoration: none;
-}
 .menu{
     height: inherit;
 }
-.menu li:hover{
-    text-decoration: underline;
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    color: #9409d4;
 }
 .header ol{
     display: flex;
@@ -70,7 +70,8 @@ header a{
     padding: 0 10px;
 }
 
-/*MAIN*/
+/*2. MAIN*/
+    /*2.1. Welcome*/
 .hero{
     height: 300px;
     background-color: #111111;
@@ -82,6 +83,8 @@ header a{
     object-fit: cover;
     max-width: 360px;
 }
+
+    /*2.2. Portfolio*/
 .portfolio{
     background: #161616;
     padding: 20px;
@@ -91,18 +94,24 @@ header a{
     border-radius: 10px;
     margin-bottom: 15px;
     padding: 20px;
-    background: white;
+    background: #111111;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.project-course,
 .project-date,
 .project-url{
     margin: 10px 0;
 }
-.project-description{
+.project-date{
     font-size: 15px;
+}
+.project-url{
+    color: #04cde7;
+    text-decoration: none;
+}
+.project-description{
+    font-size: 16px;
 }
 .project strong{
     font-family: 'Fjalla One', sans-serif;
@@ -114,12 +123,13 @@ header a{
 }
 .project-details{
     width: 500px;
+    color: white;
 }
 .project-imageContainer{
     width: 500px;
 }
 
-
+    /*2.3. Experiencia*/
 .event-list{
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +143,7 @@ header a{
     flex-shrink: 0; /*(Cuanto puede achicarse)*/
     border-radius: 10px;
     overflow: hidden;
-    background: #f4fbff;
+    background: #202429;
 }
 .event img{
     width:  480px;
@@ -141,12 +151,19 @@ header a{
     object-fit: cover;
 }
 .event-detail{
+    color: white;
+    border-radius: 10px;
     margin: 20px 40px;
     margin-top: -40px;
-    background-color: white;
+    background-color: #111111;
     position: relative;
     padding: 20px;
     text-align: center;
+}
+.event-title{
+    color: #04cde7;
+    font-size: 20px;
+    letter-spacing: .4px;
 }
 .event-description{
     text-align: left;
@@ -158,37 +175,16 @@ header a{
     border: 1px solid;
     border-radius: 5px;
 }
+
+    /*2.4. Contacto*/
 .contact{
     background: linear-gradient(#111111,#202429);
-    color: black;
     height: 125px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-/*SOCIAL LINKS*/
-.social-link{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-size: 50px 50px;
-    margin: 0 10px;
-}
-.social-link.twitter{
-    background-image: url("https://img.icons8.com/android/48/000000/twitter.png");
-}
-.social-link.facebook{
-    background-image: url("https://img.icons8.com/android/48/000000/facebook.png");
-}
-.social-link.github{
-    background-image: url("https://img.icons8.com/android/48/000000/github.png");
-}
-.social-link.instagram{
-    background-image: url("https://img.icons8.com/android/48/000000/instagram.png");
-}
-
-/*EMAIL REQUEST*/
+        /*2.4.1. EMAIL REQUEST*/
 .form-email input{
     border-color: #9409d4;
     border-radius: 5px;
@@ -231,14 +227,36 @@ header a{
     height: inherit;
     flex-wrap: wrap;
 }
+        /*2.4.2. SOCIAL LINKS*/
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+.social-link.twitter{
+    background-image: url("https://img.icons8.com/android/48/000000/twitter.png");
+}
+.social-link.facebook{
+    background-image: url("https://img.icons8.com/android/48/000000/facebook.png");
+}
+.social-link.github{
+    background-image: url("https://img.icons8.com/android/48/000000/github.png");
+}
+.social-link.instagram{
+    background-image: url("https://img.icons8.com/android/48/000000/instagram.png");
+}
 
-/*FOOTER*/
+
+/*3. FOOTER*/
 .footer{
     background-color: #202429;
     color: white;
     display: flex;
     justify-content: flex-end;
     padding: 0 20px 10px 0;
+    font-size: 13px;
 }
 .footer a{
     color: white;
