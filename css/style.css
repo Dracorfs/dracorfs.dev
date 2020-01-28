@@ -32,42 +32,41 @@ h2{
 header{
     background-color: #111111;
     color: white;
-    display: flex;
+    width: 100%;
     height: 70px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-ol, ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-figure{
+.logo{
     margin: 0;
 }
 .menu{
     height: inherit;
+    width: inherit;
 }
-.menu a{
-    text-decoration: none;
-    color: white;
+.menu ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-.menu a:hover{
-    color: #9409d4;
-}
-.header ol{
+.menu ol{
     display: flex;
     height: inherit;
 }
-.header ol li{
+.menu ol li{
     height: inherit;
-
 }
-header a{
+.menu a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
     display: flex;
     align-items: center;
     height: inherit;
-    padding: 0 10px;
+}
+.menu a:hover{
+    color: #9409d4;
 }
 
 /*2. MAIN*/
@@ -268,4 +267,8 @@ header a{
 .footer a{
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    
 }
