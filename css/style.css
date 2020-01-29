@@ -43,7 +43,6 @@ header{
 }
 .menu{
     height: inherit;
-    width: inherit;
 }
 .menu ol, ul{
     margin: 0;
@@ -270,5 +269,8 @@ header{
 }
 
 @media only screen and (max-width: 600px){
-    
+    .menu{
+        display: flex;
+        align-items: ;
+    }
 }
