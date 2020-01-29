@@ -27,16 +27,6 @@ h2{
     font-size: 25px;
     margin-bottom: 40px;
 }
-
-/*1. HEADER*/
-header{
-    background-color: #111111;
-    color: white;
-    display: flex;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-}
 ol, ul{
     margin: 0;
     padding: 0;
@@ -45,30 +35,38 @@ ol, ul{
 figure{
     margin: 0;
 }
+
+/*1. HEADER*/
+header{
+    background-color: #111111;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .menu{
+    height: inherit;
+}
+.menu ol{
+    display: flex;
+    height: inherit;
+}
+.menu ol li{
     height: inherit;
 }
 .menu a{
     text-decoration: none;
     color: white;
-}
-.menu a:hover{
-    color: #9409d4;
-}
-.header ol{
-    display: flex;
-    height: inherit;
-}
-.header ol li{
-    height: inherit;
-
-}
-header a{
     display: flex;
     align-items: center;
     height: inherit;
     padding: 0 10px;
 }
+.menu a:hover{
+    color: #9409d4;
+}
+
 
 /*2. MAIN*/
     /*2.1. Welcome*/
@@ -130,13 +128,6 @@ header a{
 }
 
     /*2.3. Experiencia*/
-.event-list{
-    display: flex;
-    flex-wrap: wrap;
-}
-.event-list-title{
-    margin-left: 20px;
-}
 .event{
     margin: 10px;
     width: 480px;
@@ -144,6 +135,13 @@ header a{
     border-radius: 10px;
     overflow: hidden;
     background: #202429;
+}
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.event-list-title{
+    margin-left: 20px;
 }
 .event img{
     width:  480px;
