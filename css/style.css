@@ -37,9 +37,10 @@ figure{
 }
 
 /*1. HEADER*/
-header{
+.header{
     background-color: #111111;
     color: white;
+    width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -67,11 +68,10 @@ header{
     color: #9409d4;
 }
 
-
 /*2. MAIN*/
     /*2.1. Welcome*/
 .hero{
-    height: 300px;
+    height: 570px;
     background-color: #111111;
     display: flex;
     align-items: center;
@@ -200,6 +200,7 @@ header{
     background-position-y: center;
     background-position-x: 5px;
     background-color: rgba(4, 205, 231, 0.1);
+    outline: none;
 }
 .form-email button{
     font-weight: bold;
@@ -210,6 +211,7 @@ header{
     padding: 10px 0;
     border-radius: 5px;
     width: 100px;
+    outline: none;
 }
 .form-email h3{
     font-family: 'Source Sans Pro', sans-serif;
@@ -266,4 +268,8 @@ header{
 .footer a{
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    
 }
