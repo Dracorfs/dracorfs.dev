@@ -271,5 +271,41 @@ figure{
 }
 
 @media only screen and (max-width: 600px){
-    
+    h1{
+        font-size: 30px;
+    }
+    .header{
+        justify-content: center;
+    }
+    .logo{
+        margin-top: 7px;
+    }
+    .hero-image{
+        display: none;
+    }
+    .project{
+        flex-direction: column;
+    }
+    .project-details{
+        width: auto;
+    }
+    .project-imageContainer{
+        width: auto;
+    }
+    .portfolio{
+        padding: 1px 20px 15px 20px;
+    }
+    .social-link{
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        width: 25px;
+        height: 25px;
+        background-size: 25px 25px;
+        margin: 0 10px 2px;
+    }
+    .footer{
+        font-size: 10px;
+        padding: 0 10px 10px 0;
+    }
 }
