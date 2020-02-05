@@ -301,6 +301,9 @@ figure{
     .project-imageContainer{
         width: auto;
     }
+    .project-image{
+        width: 300px;
+    }
     .portfolio{
         padding: 1px 20px 15px 20px;
     }
