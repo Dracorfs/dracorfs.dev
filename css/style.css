@@ -74,6 +74,8 @@ figure{
     height: 570px;
     background-color: #111111;
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     align-items: center;
     justify-content: space-between;
 }
@@ -276,9 +278,16 @@ figure{
     }
     .header{
         justify-content: center;
+        height: 150px;
     }
     .logo{
         margin-top: 7px;
+    }
+    .menu{
+        height: 50px;
+    }
+    .hero{
+        height: 480px;
     }
     .hero-image{
         display: none;
@@ -299,10 +308,11 @@ figure{
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
-        width: 25px;
-        height: 25px;
-        background-size: 25px 25px;
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
         margin: 0 10px 2px;
+ 
     }
     .footer{
         font-size: 10px;
