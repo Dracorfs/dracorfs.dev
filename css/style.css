@@ -307,6 +307,18 @@ figure{
     .portfolio{
         padding: 1px 20px 15px 20px;
     }
+    .event{
+        width: 300px;
+    }
+    .event-detail{
+        margin: 20px 15px 15px;
+        margin-top: -60px;
+        padding-top: 5px;
+    }
+    .event img{
+        width: 300px;
+        height: 250px;
+    }
     .social-link{
         display: flex;
         display: -webkit-flex;
