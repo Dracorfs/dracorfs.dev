@@ -319,18 +319,25 @@ figure{
         width: 300px;
         height: 250px;
     }
+    .social{
+        display: flex;
+        width: 90px;
+        height: 90px;
+        align-content: center;
+        flex-wrap: wrap;
+    }
     .social-link{
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
-        width: 30px;
-        height: 30px;
-        background-size: 30px 30px;
-        margin: 0 10px 2px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px 35px;
+        margin: 0 5px 5px;
  
     }
     .footer{
         font-size: 10px;
-        padding: 0 10px 10px 0;
+        padding: 0 5px 5px 0;
     }
 }
