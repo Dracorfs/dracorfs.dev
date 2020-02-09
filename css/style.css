@@ -321,7 +321,7 @@ figure{
     }
     .social{
         display: flex;
-        width: 90px;
+        width: 80px;
         height: 80px;
         align-content: center;
         flex-wrap: wrap;
@@ -339,5 +339,10 @@ figure{
     .footer{
         font-size: 10px;
         padding: 0 5px 5px 0;
+    }
+}
+/*iPad*/ @media only screen and (max-width: 800px){
+    .project-image{
+        width: 320px;
     }
 }
