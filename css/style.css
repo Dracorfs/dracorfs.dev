@@ -327,9 +327,6 @@ figure{
         flex-wrap: wrap;
     }
     .social-link{
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         width: 30px;
         height: 30px;
         background-size: 30px 30px;
