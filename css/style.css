@@ -204,6 +204,7 @@ figure{
     background-color: rgba(4, 205, 231, 0.1);
     outline: none;
 }
+/*Antiguo:
 .form-email button{
     font-weight: bold;
     display: block;
@@ -214,6 +215,20 @@ figure{
     border-radius: 5px;
     width: 100px;
     outline: none;
+}*/
+/*Nuevo:*/
+.form-email a{
+    font-weight: bold;
+    display: flex;
+    margin-top: 10px;
+    color: white;
+    padding: 10px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100px;
+    outline: none;
+    text-decoration: none;
+    justify-content: center;
 }
 .form-email h3{
     font-family: 'Source Sans Pro', sans-serif;
