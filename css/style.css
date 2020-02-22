@@ -79,10 +79,6 @@ figure{
     align-items: center;
     justify-content: space-between;
 }
-.hero-image{
-    object-fit: cover;
-    max-width: 360px;
-}
 
     /*2.2. Portfolio*/
 .portfolio{
@@ -223,9 +219,9 @@ figure{
     margin-top: 10px;
     color: white;
     padding: 10px 0;
-    border: 1px solid white;
+    border: 3px solid #9409d4;
     border-radius: 5px;
-    width: 100px;
+    width: 150px;
     outline: none;
     text-decoration: none;
     justify-content: center;
@@ -303,9 +299,6 @@ figure{
     }
     .hero{
         height: 480px;
-    }
-    .hero-image{
-        display: none;
     }
     .project{
         flex-direction: column;
