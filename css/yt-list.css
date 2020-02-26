@@ -64,26 +64,27 @@ body {
     position: relative;
     margin-bottom: 20px;
 }
-.carousel::-webkit-scrollbar {
-    width: 12px;
-}
-.carousel::-webkit-scrollbar:vertical {
-    display: none;
-}
-.carousel::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-}
-.carousel::-webkit-scrollbar-track-piece {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-}
-.carousel::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-.carousel::-webkit-scrollbar-corner{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
+/*SCROLLBAR*/
+    .carousel::-webkit-scrollbar {
+        width: 12px;
+    }
+    .carousel::-webkit-scrollbar:vertical {
+        display: none;
+    }
+    .carousel::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 10px;
+    }
+    .carousel::-webkit-scrollbar-track-piece {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    }
+    .carousel::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    .carousel::-webkit-scrollbar-corner{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
 
 .carousel__container{
     white-space: nowrap;
@@ -102,6 +103,18 @@ body {
     transform-origin: center left;
     position: relative;
 }
+.carousel-final-item{
+    width: 426,2px;
+    height: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center right;
+    position: relative;
+}
+
 .carousel-item:hover ~ .carousel-item{
     transform: translate3d(170px, 0, 0);
 }
@@ -112,6 +125,18 @@ body {
     transform: scale(1.4);
     opacity: 1;
 }
+
+.carousel-item:hover ~ .carousel-final-item{
+    transform: translate3d(170px, 0, 0);
+}
+.carousel__container:hover .carousel-final-item{
+    opacity: 0.3;
+}
+.carousel__container:hover .carousel-final-item:hover{
+    transform: scale(1.4);
+    opacity: 1;
+}
+
 .carousel-item__img{
     width: 200px;
     height: 250px;
