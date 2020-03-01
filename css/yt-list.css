@@ -183,5 +183,11 @@ body {
         height: ‭194,4‬‬px;
         margin-right: 20px;
     }
+    .carousel-item:hover ~ .carousel-item{
+        transform: none;
+    }
+    .carousel-item:hover ~ .carousel-final-item{
+        transform: none;
+    }
 }
 
