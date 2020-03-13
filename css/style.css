@@ -299,6 +299,11 @@ figure{
     }
     .hero{
         height: 480px;
+        justify-content: center;
+    }
+    .hero-image{
+        width: 277.2px;
+        height: 105px;
     }
     .project{
         flex-direction: column;

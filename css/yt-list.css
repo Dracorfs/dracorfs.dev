@@ -27,28 +27,47 @@ body {
 }
 .main__title{
     color: white;
-    font-size: 25px;
+    font-size: 23px;
     /*Centrado:*/
     display: flex;
     justify-content: center;
+}.main__title--menu{
+    display: flex;
+    align-items: center;
 }
-.input-search{
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid white;
-    border-radius:40px;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 16;
+.main__title--menu-popup{
+    display: none;
+    text-decoration: none;
+    border-radius: 20px;
+    list-style: none;
+    padding: 10px;
+    position: absolute;
+    width: 300px;
     height: 50px;
-    padding: 0 20px;
-    width: 70%;
-    outline: none;
-    /*Centrado:*/
-    display: block;
-    margin: auto;
-}
-::placeholder{
+    text-align: center;
+    margin: 0px 0px 0px 170px;
+    background: red;
     color: white;
+}
+.main__title--menu:hover .main__title--menu-popup, .main__title--menu-popup:hover{
+    display: block;
+}
+.main__title--menu-img{
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+.main__title--menu-img img{
+    margin-right: 8px;
+    width: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center;
+}
+.main__title--menu-img img:hover{
+    border-radius: 100px;
+    transform: scale(1.2);
 }
 .categories__title{
     color: white;
@@ -137,12 +156,6 @@ body {
     transform: scale(1.4);
     opacity: 1;
 }
-/*
-.carousel-item__img{
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-}*/
 
 /*FOOTER*/
 .footer{
@@ -159,6 +172,16 @@ body {
 
 /*RESPONSIVE DESIGN*/
 @media only screen and (max-width: 600px){
+    .main__title--menu:hover .main__title--menu-popup, .main__title--menu-popup:hover{
+        display: none;
+    }
+    .main__title--menu-img img{
+        border-radius: 100px;
+    }
+    .main__title--menu-img img:hover{
+        border-radius: 100px;
+        transform: none;
+    }
     .carousel{
         padding: 25px 25px 10px 15px;
         margin-bottom: 0px;
