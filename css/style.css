@@ -78,7 +78,7 @@ figure{
     padding: 0 10px;
 }
 .menu a:hover{
-    color: #9409d4;
+    color: #04cde7;
 }
 
 /*2. MAIN*/
@@ -166,7 +166,7 @@ figure{
 .event-detail{
     color: white;
     border-radius: 10px;
-    margin: 20px 40px;
+    margin: 20px 20px;
     margin-top: -40px;
     background-color: rgb(0, 0, 0);
     position: relative;
@@ -301,6 +301,9 @@ figure{
 }
 
 @media only screen and (max-width: 600px){
+    #particles-js {
+        opacity: 40%;
+    }
     h1{
         font-size: 30px;
     }
@@ -310,6 +313,12 @@ figure{
     }
     .logo{
         margin-top: 7px;
+    }
+    .welcome{
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
     }
     .menu{
         height: 50px;
