@@ -2,7 +2,8 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
-    background-color: #111111;
+    background-color: #080808;
+
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Fjalla One', sans-serif;
@@ -36,9 +37,21 @@ figure{
     margin: 0;
 }
 
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.bigContainer{
+
+    position: relative;
+    z-index: 99;
+}
+
 /*1. HEADER*/
 .header{
-    background-color: #111111;
+    background: linear-gradient(black, transparent);
     color: white;
     width: 100%;
     height: 70px;
@@ -72,17 +85,22 @@ figure{
     /*2.1. Welcome*/
 .hero{
     height: 570px;
-    background-color: #111111;
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     align-items: center;
     justify-content: space-between;
 }
+.welcome{
+    background-color: rgba(0, 0, 0,0.8);
+    border: grey solid;
+    border-radius: 15px;
+    padding: 15px;
+}
 
     /*2.2. Portfolio*/
 .portfolio{
-    background: #161616;
+    background-color: rgba(0, 0, 0,0.8);
     padding: 20px;
 }
 .project{
@@ -90,7 +108,6 @@ figure{
     border-radius: 10px;
     margin-bottom: 15px;
     padding: 20px;
-    background: #111111;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,7 +149,7 @@ figure{
     flex-shrink: 0; /*(Cuanto puede achicarse)*/
     border-radius: 10px;
     overflow: hidden;
-    background: #202429;
+    background: #080808;
 }
 .event-list{
     display: flex;
@@ -151,7 +168,7 @@ figure{
     border-radius: 10px;
     margin: 20px 40px;
     margin-top: -40px;
-    background-color: #111111;
+    background-color: rgb(0, 0, 0);
     position: relative;
     padding: 20px;
     text-align: center;
@@ -180,7 +197,7 @@ figure{
 
     /*2.4. Contacto*/
 .contact{
-    background: linear-gradient(#111111,#202429);
+    background: linear-gradient(transparent,black);
     height: 125px;
     display: flex;
     align-items: center;
@@ -271,7 +288,7 @@ figure{
 
 /*3. FOOTER*/
 .footer{
-    background-color: #202429;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: flex-end;
