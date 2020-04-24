@@ -193,56 +193,7 @@ figure{
     height: 125px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-        /*2.4.1. EMAIL REQUEST*/
-.form-email input{
-    border-color: #9409d4;
-    border-radius: 5px;
-    border-style: solid;
-    padding: 5px 20px 5px 25px;
-    background-image: url("https://img.icons8.com/ios-filled/50/000000/delivered-mail.png");
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 5px;
-    background-color: rgba(4, 205, 231, 0.1);
-    outline: none;
-}
-/*Antiguo:
-.form-email button{
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-    background: transparent;
-    color: white;
-    padding: 10px 0;
-    border-radius: 5px;
-    width: 100px;
-    outline: none;
-}*/
-/*Nuevo:*/
-.form-email a{
-    font-weight: bold;
-    display: flex;
-    margin-top: 10px;
-    color: white;
-    padding: 10px 0;
-    border: 3px solid #9409d4;
-    border-radius: 5px;
-    width: 150px;
-    outline: none;
-    text-decoration: none;
-    justify-content: center;
-}
-.form-email h3{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    margin: 10px;
-    margin-top: 0;
-    padding-top: 0;
-    border-top: 0;
-    color: white;
+    justify-content: space-around;
 }
 .container{
     width: 80%;
@@ -255,7 +206,24 @@ figure{
     height: inherit;
     flex-wrap: wrap;
 }
-        /*2.4.2. SOCIAL LINKS*/
+.invitation h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+    color: white;
+}
+.invitation h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    margin: 10px;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+    color: white;
+}
 .social-link{
     display: inline-block;
     width: 50px;
