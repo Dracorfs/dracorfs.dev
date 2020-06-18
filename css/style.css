@@ -244,7 +244,9 @@ figure{
 .social-link.instagram{
     background-image: url("https://img.icons8.com/nolan/64/instagram-new.png");
 }
-
+.social-link.linkedin{
+    background-image: url("https://img.icons8.com/nolan/64/linkedin.png");
+}
 
 /*3. FOOTER*/
 .footer{
