@@ -27,16 +27,16 @@ figure{
 /*1. HEADER*/
 .header{
     width: 100%;
-    height: 80px;
+    height: 90px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-.header__img{
+.header img{
     outline: none;
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 15px;
+    height: 50px;
+}
+.header a {
+    color: transparent;
 }
 main{
     color: white;
