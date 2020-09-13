@@ -209,15 +209,6 @@ figure{
     height: inherit;
     flex-wrap: wrap;
 }
-.invitation h3{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    margin: 10px;
-    margin-top: 0;
-    padding-top: 0;
-    border-top: 0;
-    color: white;
-}
 .invitation h4{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 17px;
@@ -324,17 +315,7 @@ figure{
         width: 300px;
         height: 200px;
     }
-    .social{
-        display: flex;
-        width: 80px;
-        height: 80px;
-        align-content: center;
-        flex-wrap: wrap;
-    }
     .social-link{
-        width: 30px;
-        height: 30px;
-        background-size: 30px 30px;
         margin: 0 5px 5px;
     }
     .footer{
