@@ -23,12 +23,17 @@ h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     font-size: 1.6em;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0;
 }
 figure{
     margin: 0;
 }
-
+hr {
+    margin: 1em 2em;
+    width: 25%;
+    border: none;
+    border-bottom: 1px solid rgba(4, 205, 231, 0.1)
+}
 #particles-js {
 	height: 100vh; 
 	width: 100%;
@@ -111,6 +116,12 @@ figure{
 .portfolio{
     background-color: rgba(0, 0, 0,0.8);
     padding: 1.25em;
+}
+.container hr {
+    margin: 1.5em 0;
+    width: 25%;
+    border: none;
+    border-bottom: 1px solid rgba(4, 205, 231, 0.1);
 }
 .project{
     border: 1px solid gray;
@@ -277,6 +288,10 @@ figure{
     h1{
         font-size: 2em;
     }
+    hr {
+        margin: 1em auto;
+        width: 70%;
+    }
     .welcome{
         background-color: transparent;
         border: none;
@@ -290,6 +305,13 @@ figure{
     }
     .container {
         width: 95%;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container hr {
+        margin: 1em auto;
+        width: 50%;
     }
     .project{
         flex-direction: column;
@@ -329,7 +351,7 @@ figure{
         padding: auto;
     }
 }
-/* iPad */ @media only screen and (max-width: 800px){
+@media only screen and (max-width: 950px){
     .project-image{
         width: 20em;
     }
