@@ -188,7 +188,7 @@ hr {
     flex-shrink: 0; /* How much can it shrink*/
     border-radius: 10px;
     overflow: hidden;
-    background: #080808;
+    background: rgb(240, 240, 240);
 }
 .event-list{
     display: flex;
