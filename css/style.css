@@ -159,6 +159,7 @@ figure{
 .event-list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .event-list-title{
     margin-left: 1.25em;
@@ -267,35 +268,28 @@ figure{
 }
 
 @media only screen and (max-width: 700px){
+    body {
+        font-size: 13px;
+    }
     #particles-js {
         opacity: 40%;
     }
     h1{
-        font-size: 1.87em;
-    }
-    .header{
-        justify-content: center;
-        height: 4.37em;
-    }
-    .logo{
-        margin: 1em 0.3em 0 0.3em;
+        font-size: 2em;
     }
     .welcome{
         background-color: transparent;
         border: none;
-        border-radius: 0;
-        padding: 0;
     }
     .iconsContainer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
-    .menu{
-        height: 3.12em;
+    .iconsContainer img {
+        width: 3em;
     }
-    .hero{
-        height: 30em;
-        justify-content: center;
+    .container {
+        width: 95%;
     }
     .project{
         flex-direction: column;
@@ -306,35 +300,41 @@ figure{
     .project-imageContainer{
         width: auto;
     }
-    .project-image{
-        width: 18.75em;
-    }
-    .portfolio{
-        padding: 0.1em 1.25em 0.9em 1.25em;
+    .event-list-title{
+        text-align: center;
+        margin-left: 0;
     }
     .event{
         width: 18.75em;
         background: rgba(8, 8, 8, 0.5);
     }
     .event-detail{
-        margin: 1.25em 0.6em 0.9em;
-        margin-top: -3.75em;
-        padding-top: 0.3em;
+        margin: auto;
+        margin-top: auto;
+        padding-top: auto;
+        margin-bottom: 1em;
     }
     .event img{
-        width: 18.75em;
-        height: 12.5em;
+        display: none;
+    }
+    .invitation h4 {
+        margin-top: 1em;
     }
     .social-link{
-        margin: 0 0.35em 0.35em;
+        margin: 0 0.6em 0 0.6em;
     }
     .footer{
         font-size: 0.6em;
-        padding: 0 0.35em 0.35em 0;
+        padding: auto;
     }
 }
 /* iPad */ @media only screen and (max-width: 800px){
     .project-image{
         width: 20em;
+    }
+}
+/* iPad Pro */ @media only screen and (max-width: 1050px){
+    .hero{
+        justify-content: center;
     }
 }
