@@ -156,6 +156,29 @@ hr {
 }
 .project-imageContainer{
     width: 31.25em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-image {
+    opacity: 1;
+    display: block;
+    width: 31.25em;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.project-image-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+}
+.project-imageContainer:hover .project-image {
+    opacity: 0.3;
+}
+  
+.project-imageContainer:hover .project-image-overlay {
+    opacity: 1;
 }
 
     /* Experience */
