@@ -126,7 +126,7 @@ hr {
 .project{
     border: 1px solid gray;
     border-radius: 10px;
-    margin-bottom: 0.9em;
+    margin: 4em;
     padding: 1.25em;
     display: flex;
     align-items: center;
@@ -313,15 +313,6 @@ hr {
         margin: 1em auto;
         width: 50%;
     }
-    .project{
-        flex-direction: column;
-    }
-    .project-details{
-        width: auto;
-    }
-    .project-imageContainer{
-        width: auto;
-    }
     .event-list-title{
         text-align: center;
         margin-left: 0;
@@ -351,13 +342,24 @@ hr {
         padding: auto;
     }
 }
-@media only screen and (max-width: 950px){
-    .project-image{
-        width: 20em;
+@media only screen and (max-width: 850px){
+    .project{
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 2em;
+    }
+    .project-details{
+        width: auto;
+    }
+    .project-imageContainer{
+        width: auto;
     }
 }
-/* iPad Pro */ @media only screen and (max-width: 1050px){
+/* iPad Pro */ @media only screen and (max-width: 1100px){
     .hero{
         justify-content: center;
+    }
+    .project-image{
+        width: 20em;
     }
 }
