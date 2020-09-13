@@ -313,6 +313,7 @@ figure{
         margin-top: auto;
         padding-top: auto;
         margin-bottom: 1em;
+        border: 1px solid white;
     }
     .event img{
         display: none;
