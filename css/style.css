@@ -92,6 +92,22 @@ figure{
     color: white;
     font-size: 20px;
     font-weight: bold;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.iconsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.iconsContainer p {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+.iconsContainer img {
+    margin-left: 0.5em;
 }
     /*2.2. Portfolio*/
 .portfolio{
@@ -107,12 +123,8 @@ figure{
     align-items: center;
     justify-content: space-between;
 }
-.project-date,
 .project-url{
     margin: 10px 0;
-}
-.project-date{
-    font-size: 15px;
 }
 .project-url{
     color: #04cde7;
@@ -256,7 +268,7 @@ figure{
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     #particles-js {
         opacity: 40%;
     }
@@ -275,6 +287,10 @@ figure{
         border: none;
         border-radius: 0;
         padding: 0;
+    }
+    .iconsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
     .menu{
         height: 50px;
