@@ -86,7 +86,7 @@ hr {
 /* MAIN */
     /* Welcome */
 .hero{
-    height: 35.62em;
+    height: 90vh;
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -323,6 +323,9 @@ hr {
     hr {
         margin: 1em auto;
         width: 70%;
+    }
+    .hero{
+        height: 80vh;
     }
     .welcome{
         background-color: transparent;
