@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    background-color: #080808;
+    font-size: 16px;
+    --main-color: #9409d4;
+    --secondary-color: #f6f6f6;
+}
+*::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    margin: 0;
+    strong{
+        color: #04cde7;
+    }
+}
+h2{
+    color: #04cde7;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-bottom: 0;
+}
+figure{
+    margin: 0;
+}
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.bigContainer{
+    position: relative;
+    z-index: 99;
+}
