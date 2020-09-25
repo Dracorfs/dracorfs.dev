@@ -6,28 +6,26 @@ body {
     margin: 0;
     background-color: #080808;
     font-size: 16px;
-    --main-color: #9409d4;
-    --secondary-color: #f6f6f6;
 }
 *::selection {
-    background: var(--main-color);
-    color: #fff;
+    background: $secondary-color;
+    color: $text-color;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Fjalla One', sans-serif;
 }
 
 h1{
-    color: white;
+    color: $text-color;
     font-size: 2.5em;
     line-height: 1.5em;
     margin: 0;
     strong{
-        color: #04cde7;
+        color: $primary-color;
     }
 }
 h2{
-    color: #04cde7;
+    color: $primary-color;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;

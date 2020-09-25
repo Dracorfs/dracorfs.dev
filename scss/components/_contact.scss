@@ -1,5 +1,5 @@
 .contact{
-    background: linear-gradient(transparent,black);
+    background: linear-gradient(transparent,$bg-color);
     height: 7.81em;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     margin-top: 0;
     padding-top: 0;
     border-top: 0;
-    color: white;
+    color: $text-color;
 }
 .social-link{
     display: inline-block;

@@ -1,12 +1,12 @@
 .portfolio{
-    background-color: rgba(0, 0, 0,0.8);
+    background-color: rgba($bg-color,0.8);
     padding: 1.25em;
 }
 .container hr {
     margin: 1.5em 0;
     width: 25%;
     border: none;
-    border-bottom: 1px solid rgba(4, 205, 231, 0.1);
+    border-bottom: 1px solid rgba($primary-color, 0.1);
 }
 .project{
     border: 1px solid gray;
@@ -22,7 +22,7 @@
 }
 .project-url{
     margin: 0.6em 0;
-    color: #04cde7;
+    color: $primary-color;
     text-decoration: none;
 }
 .project-description{
@@ -35,14 +35,18 @@
 }
 .project-details{
     width: 31.25em;
-    color: white;
+    color: $text-color;
 }
 .project-imageContainer{
     width: 31.25em;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
+    &:hover .project-image {
+        opacity: 0.3;
+    }
+    &:hover .project-image-overlay {
+        opacity: 1;
+    }
 }
 .project-image {
     opacity: 1;
@@ -55,11 +59,4 @@
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-}
-.project-imageContainer:hover .project-image {
-    opacity: 0.3;
-}
-  
-.project-imageContainer:hover .project-image-overlay {
-    opacity: 1;
 }

@@ -5,13 +5,13 @@
     justify-content: space-between;
 }
 .welcome{
-    background-color: rgba(0, 0, 0,0.8);
+    background-color: rgba($bg-color,0.8);
     border: grey solid;
     border-radius: 15px;
     padding: 0.9em;
 }
 .webTech p{
-    color: white;
+    color: $text-color;
     font-size: 1.25em;
     font-weight: bold;
     margin: 0;
@@ -24,9 +24,7 @@
     p {
         font-size: 1em;
         padding: 0.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter;
     }
     img {
         margin-left: 0.5em;

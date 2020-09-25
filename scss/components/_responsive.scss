@@ -9,8 +9,7 @@
         font-size: 2em;
     }
     .header a, .header figure {
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
     }
     .hero{
         height: 80vh;
