@@ -1,32 +1,53 @@
 .header{
-    background: linear-gradient($bg-color, transparent);
     color: $text-color;
-    width: 100%;
-    height: 4.37em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 30%;
 }
+
 .logo{
     @include flexCenter;
     img {
         width: 3.5em;
     }
 }
-.portfolio_link{
+.projects_link, .cvdownload-button{
+    border: 1px solid $primary-color;
+    border-radius: 5px;
     text-decoration: none;
     color: $text-color;
-    display: flex;
-    align-items: center;
-    height: inherit;
-    justify-content: flex-end;
+    @include flexCenter;
     &:hover{
         color: $primary-color;
     }
+    background-color: $bg-color;
+    font-weight: bold;
+    padding: 1em;
 }
-.resume_link {
-    @extend .portfolio_link;
-    justify-content: flex-start;
-    img {
-        width: 2em;
+
+.cvdownload-button {
+    svg {
+        margin-right: 0.2em;
+    }
+    &:hover {
+        svg {
+            polyline, line {
+                animation: docs 1s infinite;
+            }
+        }
+    };
+}
+
+@keyframes docs {
+    0% {
+     transform: translateY(0%);
+    }
+    50% {
+     transform: translateY(-15%);
+    }
+    100% {
+     transform: translateY(0%);
     }
 }

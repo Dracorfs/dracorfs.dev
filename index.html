@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     <!-- ID Particles.js -->
@@ -19,11 +19,21 @@
     <div class="bigContainer">
 
         <header class="header">
-            <a class="portfolio_link" href="#portfolio">Portfolio</a>
+            <div>
+                <a class="projects_link" href="#projects">Projects</a>
+            </div>
             <figure class="logo">
                 <img src="img/favicon.png" alt="Francisco Santopietro's logo">
             </figure>
-            <a class="resume_link" href="resources/cv-francisco-santopietro.pdf" download>My CV <img src="https://img.icons8.com/nolan/64/open-resume.png"/></a>
+            <!-- <a class="resume_link" href="resources/cv-francisco-santopietro.pdf" download>My CV <img src="https://img.icons8.com/nolan/64/open-resume.png"/></a> -->
+            <a class="cvdownload-button" href="resources/cv-francisco-santopietro.pdf" download>
+                <svg stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="16" width="16" viewBox="0 0 24 24">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line y2="3" x2="12" y1="15" x1="12"></line>
+                </svg>
+                My CV
+            </a>
         </header>
 
         <section class="hero animate__animated animate__fadeIn">
@@ -49,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="portfolio">
+        <section id="projects" class="projects">
             <div class="container">
                 <h2>My main projects</h2>
                 <hr>
@@ -141,7 +151,15 @@
         </section>
         
         <div class="container">
-            <a class="codepen-url" href="https://codepen.io/dracorfs" target="_blank">Also checkout my CodePen!<img src="https://img.icons8.com/color/50/000000/codepen.png"/></a>          
+            <a href="https://codepen.io/dracorfs">
+                <button class="codepen-url">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Also checkout my CodePen!
+                </button>
+            </a>
         </div>
 
         <section id="contact" class="contact">
@@ -151,7 +169,6 @@
                 </div>
                 <div>
                     <a href="https://twitter.com/fransantopietro" class="social-link twitter"  target="_blank"></a>
-                    <a href="https://www.facebook.com/francisco.santopietro" class="social-link facebook"  target="_blank"></a>
                     <a href="https://github.com/Dracorfs" class="social-link github"  target="_blank"></a>
                     <a href="https://www.instagram.com/fransantopietro/" class="social-link instagram"  target="_blank"></a>
                     <a href="https://www.linkedin.com/in/francisco-santopietro/" class="social-link linkedin"  target="_blank"></a>
@@ -159,7 +176,7 @@
             </div>
         </section>
         <footer class="footer">
-            <p>&copy; 2020 Francisco Santopietro</p>
+            <p>&copy; 2022 Francisco Santopietro</p>
         </footer>
 
     </div>
