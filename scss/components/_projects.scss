@@ -20,11 +20,12 @@
         font-family: 'Fjalla One', sans-serif;
     }
 }
-.project-url{
-    margin: 0.6em 0;
-    color: $primary-color;
-    text-decoration: none;
-}
+// .project-url{
+//     margin: 0.6em 0;
+//     color: $primary-color;
+//     text-decoration: none;
+// }
+@import './project-url';
 .project-description{
     font-size: 1em;
 }
