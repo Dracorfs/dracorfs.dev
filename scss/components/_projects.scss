@@ -20,16 +20,11 @@
         font-family: 'Fjalla One', sans-serif;
     }
 }
-// .project-url{
-//     margin: 0.6em 0;
-//     color: $primary-color;
-//     text-decoration: none;
-// }
-@import './project-url';
+@import './buttons/project-url';
 .project-description{
     font-size: 1em;
 }
-@import './github-button';
+@import './buttons/github-button';
 .project-title{
     font-size: 1.87em;
     margin-top: 0;
