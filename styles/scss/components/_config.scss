@@ -56,3 +56,14 @@ button{
     position: relative;
     z-index: 99;
 }
+.container{
+    width: 80%;
+    max-width: 62.5em;
+    min-width: 20em;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: wrap;
+}
