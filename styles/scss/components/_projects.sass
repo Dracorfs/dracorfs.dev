@@ -1,0 +1,60 @@
+.projects
+    background-color: rgba($bg-color,0.8)
+    padding: 1.25em
+
+.container hr
+    margin: 1.5em 0
+    width: 25%
+    border: none
+    border-bottom: 1px solid rgba($primary-color, 0.1)
+
+.project
+    border: 1px solid gray
+    border-radius: 10px
+    margin: 4em
+    padding: 1.25em
+    display: flex
+    align-items: center
+    justify-content: space-between
+    strong
+        font-family: 'Fjalla One', sans-serif
+
+@import './buttons/project-url'
+.project-description
+    font-size: 1em
+
+@import './buttons/github-button'
+.project-title
+    font-size: 1.87em
+    margin-top: 0
+    margin-bottom: 0.6rem
+
+.project-details
+    width: 31.25em
+    color: $text-color
+
+.project-tech
+    margin-bottom: 0.6rem
+    img
+        width: 2.5em
+
+.project-imageContainer
+    width: 31.25em
+    position: relative
+    @include flexCenter
+    &:hover .project-image 
+        opacity: 0.3
+    &:hover .project-image-overlay
+        opacity: 1
+
+.project-image
+    opacity: 1
+    display: block
+    width: 31.25em
+    transition: .5s ease
+    backface-visibility: hidden
+
+.project-image-overlay
+    transition: .5s ease
+    opacity: 0
+    position: absolute

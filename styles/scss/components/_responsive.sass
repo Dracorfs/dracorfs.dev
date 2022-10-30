@@ -1,0 +1,60 @@
+@media only screen and (max-width: 700px)
+    body 
+        font-size: 13px
+    #particles-js
+        opacity: 40%
+    h1
+        font-size: 1.5em
+    .hero
+        height: 80vh
+    .welcome
+        background-color: transparent
+        border: none
+    .iconsContainer
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+        img
+            width: 2em
+    .container
+        width: 95%
+        h2
+            text-align: center
+        hr
+            margin: 1em auto
+            width: 50%
+        .codepen-url
+            font-size: 1em
+            margin: 5% 20%
+    .invitation
+        h4
+            margin-top: 1em
+    .social-link
+        margin: 0 0.6em 0 0.6em
+    .footer
+        font-size: 0.6em
+        padding: auto
+
+@media only screen and (max-width: 850px)
+    .project
+        flex-direction: column
+        margin: 0
+        margin-bottom: 2em
+    .project-details
+        width: auto
+    .project-imageContainer
+        width: auto
+
+/* iPad Pro */
+@media only screen and (max-width: 1100px)
+    .header
+        width: 99%
+        margin: 0.5em 1%
+        @include flexCenter
+        figure
+            margin: 0 2.5em
+    .hero
+        justify-content: center
+    .project-image
+        width: 20em
+    .codepen-url
+        padding: 0.5em
