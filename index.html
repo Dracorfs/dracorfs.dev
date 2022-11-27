@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/main.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    
     <div class="bigContainer">
         <header class="header">
             <div>
@@ -55,12 +57,12 @@
                 <div class="shooting_star"></div>
             </div>
             <div class="container">
-                <div class="welcome">
+                <div class="welcome" data-aos="zoom-in">
                     <h1>
                         <strong>Francisco Santopietro</strong> <br/> <strong>Frontend Developer</strong> <br/> passionate for learning.
                     </h1>
                 </div>
-                <div class="webTech">
+                <div class="webTech" data-aos="fade-up">
                     <p>Preferred stack:</p>
                     <div class="iconsContainer">
                         <p>Next<img src="https://img.icons8.com/color/48/000000/nextjs.png"/></p>
@@ -75,7 +77,7 @@
             <div class="container">
                 <h2>My main projects</h2>
                 <hr>
-                <article class="project">
+                <article class="project" data-aos="fade-left">
                     <div class="project-details">
                         <h3 class="project-title">Meme generator</h3>
                         <button class="project-url">
@@ -115,7 +117,7 @@
                         </a>
                     </figure>
                 </article>
-                <article class="project">
+                <article class="project" data-aos="fade-right">
                     <div class="project-details">
                         <h3 class="project-title">Credit card form</h3>
                         <button class="project-url">
@@ -172,7 +174,7 @@
 
         <section id="contact" class="contact">
             <div class="container">
-                <div>
+                <div data-aos="fade-up">
                     <a href="https://twitter.com/fransantopietro" class="social-link twitter"  target="_blank"></a>
                     <a href="https://github.com/Dracorfs" class="social-link github"  target="_blank"></a>
                     <a href="https://www.instagram.com/fransantopietro/" class="social-link instagram"  target="_blank"></a>
@@ -185,5 +187,9 @@
         </footer>
 
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
