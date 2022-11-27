@@ -14,178 +14,175 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div class="bigContainer">
-        <header class="header">
-            <div>
-                <a class="projects_link" href="#projects">Projects</a>
-            </div>
-            <figure class="logo">
-                <img src="img/favicon.png" alt="Francisco Santopietro's logo">
-            </figure>
-            <a class="cvdownload-button" href="docs/cv-francisco-santopietro.pdf" download>
-                <svg stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="16" width="16" viewBox="0 0 24 24">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line y2="3" x2="12" y1="15" x1="12"></line>
-                </svg>
-                My CV
-            </a>
-        </header>
-
-        <section class="hero">
-            <div class="night">
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-                <div class="shooting_star"></div>
-            </div>
-            <div class="container">
-                <div class="welcome" data-aos="zoom-in">
-                    <h1>
-                        <strong>Francisco Santopietro</strong> <br/> <strong>Frontend Developer</strong> <br/> passionate for learning.
-                    </h1>
-                </div>
-                <div class="webTech" data-aos="fade-up">
-                    <p>Preferred stack:</p>
-                    <div class="iconsContainer">
-                        <p>Next<img src="https://img.icons8.com/color/48/000000/nextjs.png"/></p>
-                        <p>TypeScript<img src="https://img.icons8.com/color/48/000000/typescript.png"/></p>
-                        <p>TailWind<img src="https://img.icons8.com/color/48/000000/tailwindcss.png"/></p>
-                        <p>SASS<img src="https://img.icons8.com/color/48/000000/sass.png"/></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>My main projects</h2>
-                <hr>
-                <article class="project" data-aos="fade-left">
-                    <div class="project-details">
-                        <h3 class="project-title">Meme generator</h3>
-                        <button class="project-url">
-                            <a href="https://reactmeme.netlify.app" target="_blank">
-                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path>
-                                </svg>
-                                <span>reactmeme.netlify.app</span>
-                            </a>
-                        </button>
-                        <p class="project-description">
-                            Receives 2 text inputs and mix these with a random meme took from an API.<br>
-                            Responsive Design.<br>
-                            API: imgflip.com/api
-                        </p>
-                        <div class="project-tech">
-                            <img src="https://img.icons8.com/color/48/000000/html-5.png"/>
-                            <img src="https://img.icons8.com/color/48/000000/sass.png"/>
-                            <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
-                        </div>
-                        <button class="github-button">
-                            <a href="https://github.com/Dracorfs/meme-generator" target="_blank">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path>
-                                </svg> Check the code on GitHub
-                            </a>
-                        </button>
-                    </div>
-                    <figure class="project-imageContainer">
-                        <a href="https://reactmeme.netlify.app" target="_blank">
-                            <img class="project-image" src="img/meme-generator.png" alt="Dynamic card form project">
-                        </a>
-                        <a class="project-image-overlay" href="https://reactmeme.netlify.app" target="_blank">
-                            <img src="https://img.icons8.com/nolan/64/visible.png"/>
-                        </a>
-                    </figure>
-                </article>
-                <article class="project" data-aos="fade-right">
-                    <div class="project-details">
-                        <h3 class="project-title">Credit card form</h3>
-                        <button class="project-url">
-                            <a href="https://dracorfs.github.io/credit-card-form-3d/" target="_blank">
-                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path>
-                                </svg>
-                                <span>dracorfs.github.io/credit-card-form-3d/</span>
-                            </a>
-                        </button>
-                        <p class="project-description">
-                            It can be used in any e-commerce.<br>
-                            3D Animations and validation with regular expressions.<br>
-                            Responsive Design.
-                        </p>
-                        <div class="project-tech">
-                            <img src="https://img.icons8.com/color/48/000000/html-5.png"/>
-                            <img src="https://img.icons8.com/color/48/000000/css3.png"/>
-                            <img src="https://img.icons8.com/color/48/000000/javascript.png"/>
-                        </div>
-                        <button class="github-button">
-                            <a href="https://github.com/Dracorfs/credit-card-form-3d" target="_blank">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path>
-                                </svg> Check the code on GitHub
-                            </a>
-                        </button>
-                    </div>
-                    <figure class="project-imageContainer">
-                        <a href="https://dracorfs.github.io/credit-card-form-3d/" target="_blank">
-                            <img class="project-image" src="img/card-form.png" alt="Dynamic card form project">
-                        </a>
-                        <a class="project-image-overlay" href="https://dracorfs.github.io/credit-card-form-3d/" target="_blank">
-                            <img src="https://img.icons8.com/nolan/64/visible.png"/>
-                        </a>
-                    </figure>
-                </article>
-            </div>
-        </section>
-        
-        <div class="container">
-            <a href="https://codepen.io/dracorfs">
-                <button class="codepen-url">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Also checkout my CodePen!
-                </button>
-            </a>
+    <header class="header">
+        <div>
+            <a class="projects_link" href="#projects">Projects</a>
         </div>
+        <figure class="logo">
+            <img src="img/favicon.png" alt="Francisco Santopietro's logo">
+        </figure>
+        <a class="cvdownload-button" href="docs/cv-francisco-santopietro.pdf" download>
+            <svg stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="16" width="16" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line y2="3" x2="12" y1="15" x1="12"></line>
+            </svg>
+            My CV
+        </a>
+    </header>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <div data-aos="fade-up">
-                    <a href="https://twitter.com/fransantopietro" class="social-link twitter"  target="_blank"></a>
-                    <a href="https://github.com/Dracorfs" class="social-link github"  target="_blank"></a>
-                    <a href="https://www.instagram.com/fransantopietro/" class="social-link instagram"  target="_blank"></a>
-                    <a href="https://www.linkedin.com/in/francisco-santopietro/" class="social-link linkedin"  target="_blank"></a>
+    <section class="hero">
+        <div class="night">
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+        </div>
+        <div class="container">
+            <div class="welcome" data-aos="zoom-in">
+                <h1>
+                    <strong>Francisco Santopietro</strong> <br/> <strong>Frontend Developer</strong> <br/> passionate for learning.
+                </h1>
+            </div>
+            <div class="webTech" data-aos="fade-up">
+                <p>Preferred stack:</p>
+                <div class="iconsContainer">
+                    <p>Next<img src="https://img.icons8.com/color/48/000000/nextjs.png"/></p>
+                    <p>TypeScript<img src="https://img.icons8.com/color/48/000000/typescript.png"/></p>
+                    <p>TailWind<img src="https://img.icons8.com/color/48/000000/tailwindcss.png"/></p>
+                    <p>SASS<img src="https://img.icons8.com/color/48/000000/sass.png"/></p>
                 </div>
             </div>
-        </section>
-        <footer class="footer">
-            <p>&copy; 2022 Francisco Santopietro</p>
-        </footer>
-
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My main projects</h2>
+            <hr>
+            <article class="project" data-aos="fade-left">
+                <div class="project-details">
+                    <h3 class="project-title">Meme generator</h3>
+                    <button class="project-url">
+                        <a href="https://reactmeme.netlify.app" target="_blank">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path>
+                            </svg>
+                            <span>reactmeme.netlify.app</span>
+                        </a>
+                    </button>
+                    <p class="project-description">
+                        Receives 2 text inputs and mix these with a random meme took from an API.<br>
+                        Responsive Design.<br>
+                        API: imgflip.com/api
+                    </p>
+                    <div class="project-tech">
+                        <img src="https://img.icons8.com/color/48/000000/html-5.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/sass.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
+                    </div>
+                    <button class="github-button">
+                        <a href="https://github.com/Dracorfs/meme-generator" target="_blank">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path>
+                            </svg> Check the code on GitHub
+                        </a>
+                    </button>
+                </div>
+                <figure class="project-imageContainer">
+                    <a href="https://reactmeme.netlify.app" target="_blank">
+                        <img class="project-image" src="img/meme-generator.png" alt="Dynamic card form project">
+                    </a>
+                    <a class="project-image-overlay" href="https://reactmeme.netlify.app" target="_blank">
+                        <img src="https://img.icons8.com/nolan/64/visible.png"/>
+                    </a>
+                </figure>
+            </article>
+            <article class="project" data-aos="fade-right">
+                <div class="project-details">
+                    <h3 class="project-title">Credit card form</h3>
+                    <button class="project-url">
+                        <a href="https://dracorfs.github.io/credit-card-form-3d/" target="_blank">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path>
+                            </svg>
+                            <span>dracorfs.github.io/credit-card-form-3d/</span>
+                        </a>
+                    </button>
+                    <p class="project-description">
+                        It can be used in any e-commerce.<br>
+                        3D Animations and validation with regular expressions.<br>
+                        Responsive Design.
+                    </p>
+                    <div class="project-tech">
+                        <img src="https://img.icons8.com/color/48/000000/html-5.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/css3.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/javascript.png"/>
+                    </div>
+                    <button class="github-button">
+                        <a href="https://github.com/Dracorfs/credit-card-form-3d" target="_blank">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path>
+                            </svg> Check the code on GitHub
+                        </a>
+                    </button>
+                </div>
+                <figure class="project-imageContainer">
+                    <a href="https://dracorfs.github.io/credit-card-form-3d/" target="_blank">
+                        <img class="project-image" src="img/card-form.png" alt="Dynamic card form project">
+                    </a>
+                    <a class="project-image-overlay" href="https://dracorfs.github.io/credit-card-form-3d/" target="_blank">
+                        <img src="https://img.icons8.com/nolan/64/visible.png"/>
+                    </a>
+                </figure>
+            </article>
+        </div>
+    </section>
+    
+    <div class="container">
+        <a href="https://codepen.io/dracorfs">
+            <button class="codepen-url">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Also checkout my CodePen!
+            </button>
+        </a>
     </div>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div data-aos="fade-up">
+                <a href="https://twitter.com/fransantopietro" class="social-link twitter"  target="_blank"></a>
+                <a href="https://github.com/Dracorfs" class="social-link github"  target="_blank"></a>
+                <a href="https://www.instagram.com/fransantopietro/" class="social-link instagram"  target="_blank"></a>
+                <a href="https://www.linkedin.com/in/francisco-santopietro/" class="social-link linkedin"  target="_blank"></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2022 Francisco Santopietro</p>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
