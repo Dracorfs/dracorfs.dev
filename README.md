@@ -3,7 +3,6 @@ This is my GitHub porfolio, where you can see my frontend projects.
 
 Implemented:
   - CSS preprocessor: SASS
-  - <a href="https://michalsnik.github.io/aos/">Animate On Scroll Library</a> for some cool animations.
 
 <a href="https://dracorfs.dev">Check it out❗</a>
 
