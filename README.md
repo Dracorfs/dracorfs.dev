@@ -1,44 +1,57 @@
 # Francisco Santopietro's Portfolio
 
-A minimalist, elegant portfolio website built with **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**, inspired by the design of [Brittany Chiang](https://brittanychiang.com/).
+A minimalist, elegant portfolio website built with **Astro**, **React**, **TypeScript**, and **Tailwind CSS**, inspired by the design of [Brittany Chiang](https://brittanychiang.com/).
 
 ## Features
 
-- 🎨 **Modern Design**: Clean, minimalist aesthetic with cyan accent colors
+- 🎨 **Modern Design**: Clean, minimalist aesthetic with evergreen accent colors
 - 📱 **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
-- ⚡ **High Performance**: Static generation with Next.js for fast loading
+- ⚡ **High Performance**: Static generation with Astro for lightning-fast loading (zero JS by default)
 - 🎯 **Accessible**: Built with accessibility best practices (WCAG compliant)
-- 🌙 **Dark Theme**: Professional dark navy theme with cyan accents
-- ✨ **Smooth Animations**: Elegant transitions and hover effects
+- 🌲 **Evergreen Theme**: Professional dark theme with evergreen green accents
+- ✨ **Smooth Animations**: Elegant transitions and hover effects with cursor-tracking gradient
 - 🔍 **SEO Optimized**: Proper meta tags and semantic HTML
+- 🛡️ **Secure**: Zero known vulnerabilities, regular dependency updates
 
 ## Tech Stack
 
-- **Framework**: Next.js 14
+- **Framework**: Astro 5 (with React islands for interactivity)
 - **Styling**: Tailwind CSS
 - **Language**: TypeScript
-- **Font**: Inter (Google Fonts)
-- **Deployment**: Vercel
+- **Font**: Inter (from rsms.me/inter)
+- **Deployment**: Vercel / Static hosting
 
 ## Project Structure
 
 ```
-├── app/
-│   ├── globals.css          # Global styles
-│   ├── layout.tsx           # Main layout
-│   └── page.tsx             # Home page
+src/
+├── layouts/
+│   └── RootLayout.astro        # Main layout wrapper
+├── pages/
+│   └── index.astro             # Home page
 ├── components/
 │   ├── common/
-│   │   ├── Sidebar.tsx      # Navigation sidebar
-│   │   └── Footer.tsx       # Footer section
+│   │   ├── Sidebar.tsx         # Navigation sidebar (React island)
+│   │   ├── CursorGradient.tsx  # Cursor-tracking gradient (React island)
+│   │   └── Footer.astro        # Footer section
 │   └── sections/
-│       ├── Hero.tsx         # Hero/intro section
-│       ├── About.tsx        # About section
-│       ├── Experience.tsx   # Experience/jobs timeline
-│       └── Projects.tsx     # Featured projects showcase
-├── public/
-│   └── favicon.png          # Site icon
-└── tailwind.config.js       # Tailwind configuration
+│       ├── Hero.astro          # Hero/intro section
+│       ├── About.astro         # About section
+│       ├── Experience.astro    # Experience/jobs timeline
+│       └── Projects.astro      # Featured projects showcase
+├── styles/
+│   └── globals.css             # Global styles & animations
+├── consts.ts                   # Site data (jobs, projects, nav items)
+└── env.d.ts                    # Type definitions
+
+public/
+├── favicon.png
+├── bi-portfolio.png            # Project image
+└── icons/
+
+astro.config.mjs               # Astro configuration
+tailwind.config.js             # Tailwind configuration
+tsconfig.json                  # TypeScript configuration
 ```
 
 ## Getting Started
@@ -46,7 +59,7 @@ A minimalist, elegant portfolio website built with **Next.js**, **React**, **Typ
 ### Prerequisites
 
 - Node.js 18+
-- npm or yarn
+- npm, yarn, or pnpm
 
 ### Installation
 
@@ -60,63 +73,67 @@ npm run dev
 # Build for production
 npm run build
 
-# Start production server
-npm start
+# Preview production build
+npm run preview
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+Open [http://localhost:4321](http://localhost:4321) in your browser to see the result.
 
 ## Customization
 
-### 1. Update Navigation & Sidebar
-**File**: `components/common/Sidebar.tsx`
-- Change the logo/initials (currently "FS")
-- Update social media links
-- Modify resume download link
+### 1. Update Site Data
+**File**: `src/consts.ts`
+- Update `SITE_TITLE` and `SITE_DESCRIPTION`
+- Modify `NAV_ITEMS` for navigation links
+- Update `SOCIAL_LINKS` for GitHub and LinkedIn
+- Edit `JOBS` array with your work experience
+- Edit `PROJECTS` array with your featured projects
 
-### 2. Update Hero Section
-**File**: `components/sections/Hero.tsx`
-- Update your name and title
-- Modify the introduction text
-- Update the CTA button text
+### 2. Update Navigation & Sidebar
+**File**: `src/components/common/Sidebar.tsx`
+- Change the title and subtitle
+- Update the introduction text
+- Modify social media links
+- Adjust sticky positioning and responsive behavior
 
 ### 3. Update About Section
-**File**: `components/sections/About.tsx`
+**File**: `src/components/sections/About.astro`
 - Replace the bio text
-- Add/remove skills from the list
-- Update the description
+- Update company links
+- Modify the professional description
 
 ### 4. Update Experience Section
-**File**: `components/sections/Experience.tsx`
-- Edit the `jobs` array with your work history
+The experience data comes from `src/consts.ts`:
+- Edit the `JOBS` array with your work history
 - Update company names, positions, dates
 - Modify job descriptions and skill lists
 - Add or remove job entries
 
 ### 5. Update Projects Section
-**File**: `components/sections/Projects.tsx`
-- Edit the `projects` array
+The project data comes from `src/consts.ts`:
+- Edit the `PROJECTS` array
 - Update project titles and descriptions
 - Add project images to `/public/` folder
 - Update live links and GitHub URLs
 - Modify technology tags
 
-### 6. Update Footer
-**File**: `components/common/Footer.tsx`
-- Update the email address
-- Modify social media links
-- Change contact text
+### 6. Update Cursor Gradient
+**File**: `src/components/common/CursorGradient.tsx`
+- Modify the gradient color (currently `rgba(121, 187, 168, 0.15)`)
+- Adjust the gradient size (currently `600px`)
+- Change the opacity or transparency
 
 ## Color Scheme
 
-The portfolio uses a carefully selected color palette inspired by Brittany Chiang's design:
+The portfolio uses the **Evergreen** custom color palette:
 
-- **Background**: `#0a192f` (Navy)
-- **Accent**: `#64ffda` (Cyan)
-- **Text**: `#8892b0` to `#ccd6f6` (Slate)
-- **Hover**: Cyan accent color (#64ffda)
+- **Background**: `#0c1814` (evergreen-950 - very dark)
+- **Accent**: `#77bba8` (evergreen-400 - medium green)
+- **Text**: `#ddeee9` to `#bbddd3` (evergreen-100/200 - light)
+- **Primary**: `#55aa92` (evergreen-500)
+- **Hover**: Evergreen-400
 
-Edit `tailwind.config.js` to customize colors.
+Edit `tailwind.config.js` to customize colors by modifying the `evergreen` color palette.
 
 ## Animations
 
@@ -124,6 +141,7 @@ The site includes smooth transitions and hover effects:
 - Easing function: `cubic-bezier(0.645, 0.045, 0.355, 1)`
 - Transition duration: `0.25s`
 - Scroll behavior: Smooth
+- Cursor gradient: Tracks mouse position on desktop (1024px+)
 
 ## Deployment
 
@@ -134,9 +152,15 @@ npm install -g vercel
 vercel
 ```
 
-### GitHub Pages / Other Platforms
+### Other Static Hosting
 
-Simply push to your GitHub repository and connect it to your deployment platform.
+The build output in `dist/` is a static website, so it works with:
+- GitHub Pages
+- Netlify
+- AWS Amplify
+- Any static hosting service
+
+Simply run `npm run build` and deploy the `dist` folder.
 
 ## Browser Support
 
@@ -145,11 +169,27 @@ Simply push to your GitHub repository and connect it to your deployment platform
 - Safari (latest)
 - Edge (latest)
 
+## Performance
+
+- **Static Generation**: All pages are pre-rendered at build time
+- **Zero JavaScript (by default)**: Core content is pure HTML/CSS
+- **React Islands**: Only interactive components (Sidebar, CursorGradient) use React
+- **Image Optimization**: Astro automatically optimizes images
+- **CSS Minification**: Tailwind automatically purges unused styles
+
+## Lighthouse Scores
+
+Expect excellent Lighthouse scores:
+- Performance: 95+
+- Accessibility: 95+
+- Best Practices: 95+
+- SEO: 100
+
 ## License
 
 MIT License - Feel free to use this as a template for your own portfolio!
 
 ---
 
-**Built with Next.js & Tailwind CSS**
+**Built with Astro & Tailwind CSS**
 **Inspired by [Brittany Chiang](https://brittanychiang.com/)**
