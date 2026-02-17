@@ -1,0 +1,143 @@
+---
+import { Image } from 'astro:assets';
+import { PROJECTS } from '@/consts';
+---
+
+<section
+  id="projects"
+  class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+  aria-label="Featured projects"
+>
+  <div
+    class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-evergreen-950/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+  >
+    <h2
+      class="text-sm font-bold uppercase tracking-widest text-evergreen-100 lg:sr-only"
+    >
+      Projects
+    </h2>
+  </div>
+
+  <div>
+    <ol class="group/list">
+      {
+        PROJECTS.map((project, idx) => (
+          <li class="mb-12">
+            <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+              <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-evergreen-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+
+              {project.image && (
+                <div class="z-10 sm:col-span-2 mb-4 sm:mb-0">
+                  <a
+                    href={project.external}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="relative block rounded-lg overflow-hidden"
+                  >
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={200}
+                      height={200}
+                      class="rounded-lg object-cover group-hover:opacity-80 transition-opacity"
+                    />
+                  </a>
+                </div>
+              )}
+
+              <div
+                class={`z-10 ${project.image ? 'sm:col-span-6' : 'sm:col-span-8'}`}
+              >
+                <h3>
+                  <a
+                    class="inline-flex items-baseline font-medium leading-tight text-evergreen-100 hover:text-evergreen-400 focus-visible:text-evergreen-400 group/link text-base"
+                    href={project.external}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label={`${project.title} (opens in a new tab)`}
+                  >
+                    <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                    <span>
+                      {project.title}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </h3>
+
+                <p class="mt-2 text-sm leading-normal">{project.description}</p>
+
+                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                  {project.technologies.map((tech) => (
+                    <li class="mr-1.5 mt-2">
+                      <div class="flex items-center rounded-full bg-evergreen-400/10 px-3 py-1 text-xs font-medium leading-5 text-evergreen-400">
+                        {tech}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+
+                <ul class="mt-3 flex items-center gap-4">
+                  <li>
+                    <a
+                      class="relative inline-flex items-center text-sm font-medium text-evergreen-200 hover:text-evergreen-400 focus-visible:text-evergreen-400"
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={`GitHub (opens in a new tab)`}
+                    >
+                      <svg
+                        class="mr-2 h-3 w-3"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="relative inline-flex items-center text-sm font-medium text-evergreen-200 hover:text-evergreen-400 focus-visible:text-evergreen-400"
+                      href={project.external}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={`External Link (opens in a new tab)`}
+                    >
+                      <svg
+                        class="mr-2 h-3 w-3"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M11 3a1 1 0 100 2h3.586L9.293 9.293a1 1 0 001.414 1.414L16 6.414V10a1 1 0 102 0V4a1 1 0 00-1-1h-6z"></path>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                      </svg>
+                      Link
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>

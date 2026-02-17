@@ -1,55 +1,27 @@
 ---
-import '../styles/css/main.min.css'
-import Header from '../layout/Header.astro'
-import Background from '../components/background.astro'
-import Hero from '../components/hero.astro'
-import Project from '../components/project.astro'
-import Footer from '../layout/Footer.astro'
+import RootLayout from '@/layouts/RootLayout.astro';
+import Sidebar from '@/components/common/Sidebar';
+import Hero from '@/components/sections/Hero.astro';
+import About from '@/components/sections/About.astro';
+import Experience from '@/components/sections/Experience.astro';
+import Work from '@/components/sections/Projects.astro';
+import Footer from '@/components/common/Footer.astro';
+
+const title = 'Francisco Santopietro';
+const description = 'Frontend Engineer specializing in building accessible, pixel-perfect digital experiences.';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#000000">
-    <title>dracorfs</title>
-    <link rel="icon" href="/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-    <Header />
-
-    <section class="hero">
-        <Background />
+<RootLayout title={title} description={description}>
+  <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+    <div class="lg:flex lg:justify-between lg:gap-4">
+      <Sidebar client:load />
+      <main class="pt-24 lg:w-[52%] lg:py-24">
         <Hero />
-    </section>
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Client projects</h2>
-            <hr>
-            <Project />
-        </div>
-    </section>
-    
-    <!-- <section class="promotion">
-        <div class="container">
-            <a href="https://codepen.io/dracorfs">
-                <button class="codepen-url">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Also checkout my CodePen!
-                </button>
-            </a>
-        </div>
-    </section> -->
-
-    <Footer/>
-</body>
-</html>
+        <About />
+        <Experience />
+        <Work />
+        <Footer />
+      </main>
+    </div>
+  </div>
+</RootLayout>
