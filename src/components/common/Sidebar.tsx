@@ -28,10 +28,10 @@ export default function Sidebar() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-evergreen-100 sm:text-5xl">
+        <h1 className="font-satoshi text-4xl font-bold tracking-tight text-evergreen-100 sm:text-5xl">
           <a href="/">Francisco Santopietro</a>
         </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-evergreen-100 sm:text-xl">
+        <h2 className="subtitle font-satoshi mt-3 text-lg tracking-tight sm:text-xl">
           Fullstack Developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
@@ -45,21 +45,23 @@ export default function Sidebar() {
                 <a
                   href={item.href}
                   className={`group flex items-center py-3 transition-all ${
-                    activeSection === item.href.slice(1) ? 'active' : ''
+                    activeSection === item.href.slice(1)
+                      ? 'opacity-100'
+                      : 'opacity-70 hover:opacity-100'
                   }`}
                 >
                   <span
-                    className={`nav-indicator mr-4 h-px transition-all group-hover:w-16 group-focus-visible:w-16 group-focus-visible:bg-evergreen-400 motion-reduce:transition-none ${
+                    className={`nav-indicator mr-4 h-px transition-all group-hover:w-16 group-focus-visible:w-16 motion-reduce:transition-none ${
                       activeSection === item.href.slice(1)
-                        ? 'w-16 bg-evergreen-400'
-                        : 'w-8 bg-evergreen-600 group-hover:bg-evergreen-400'
+                        ? 'w-16 bg-warm-sand-400'
+                        : 'w-8 bg-evergreen-600 group-hover:bg-warm-sand-400'
                     }`}
                   ></span>
                   <span
                     className={`nav-text text-xs font-bold uppercase tracking-widest transition-all ${
                       activeSection === item.href.slice(1)
                         ? 'text-evergreen-100'
-                        : 'text-evergreen-600 group-hover:text-evergreen-100 group-focus-visible:text-evergreen-100'
+                        : 'text-evergreen-100 group-hover:text-evergreen-100 group-focus-visible:text-evergreen-100'
                     }`}
                   >
                     {item.name}
@@ -75,7 +77,7 @@ export default function Sidebar() {
         {SOCIAL_LINKS.map((link) => (
           <li key={link.name} className="mr-5 shrink-0 text-xs">
             <a
-              className="block hover:text-evergreen-100 transition"
+              className="block hover:text-warm-sand-400 transition"
               href={link.href}
               target="_blank"
               rel="noreferrer noopener"
