@@ -30,7 +30,7 @@ export const PROJECTS = [
     title: 'BI Dev. portfolio',
     description:
       'Web portfolio for a Business Intelligence Developer. Incorporated mailing system and responsive design to showcase data engineering projects and skills.',
-    technologies: ['Next.js', 'Tailwind CSS'],
+    technologies: ['Next.js', 'Tailwind CSS', 'TypeScript'],
     github: 'https://github.com/Dracorfs/data-engineer-portfolio',
     external: 'https://andres-martinez.vercel.app',
     image: '/bi-portfolio.png',
