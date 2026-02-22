@@ -188,8 +188,3 @@ Expect excellent Lighthouse scores:
 ## License
 
 MIT License - Feel free to use this as a template for your own portfolio!
-
----
-
-**Built with Astro & Tailwind CSS**
-**Inspired by [Brittany Chiang](https://brittanychiang.com/)**
