@@ -29,7 +29,7 @@ export default function Sidebar() {
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
       <div>
         <h1 className="font-satoshi text-4xl font-bold tracking-tight text-evergreen-100 sm:text-5xl">
-          <a href="/">Francisco Santopietro</a>
+          Francisco Santopietro
         </h1>
         <h2 className="subtitle font-satoshi mt-3 text-lg tracking-tight sm:text-xl">
           Fullstack Developer
