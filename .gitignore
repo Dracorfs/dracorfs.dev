@@ -156,5 +156,6 @@ sketch
 
 # package manager files
 bun.lockb
+bun.lock
 package-lock.json
 yarn.lock
